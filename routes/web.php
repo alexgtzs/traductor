@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return redirect()->route('dashboard');
+Route::get('/welcome', function () {
+    return redirect()->route('welcome');
 });
 
 Route::middleware([
@@ -16,3 +16,7 @@ Route::middleware([
 Route::get('/home', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
