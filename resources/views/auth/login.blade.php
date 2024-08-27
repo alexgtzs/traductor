@@ -38,11 +38,13 @@
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-
-                <x-button class="ms-4">
-                    {{ __('Log in') }}
-                </x-button>
+                <br>
+                <br>
+                
             </div>
+            <x-button class="ms-4">
+                {{ __('Log in') }}
+            </x-button>
         </form>
     </x-authentication-card>
 </x-guest-layout>
