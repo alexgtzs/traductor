@@ -5,3 +5,9 @@
 [x-cloak] {
     display: none;
 }
+
+.logo {
+    width: 200px; /* Ajusta el ancho según tu diseño */
+    height: 65px; /* Mantiene la proporción del logo */
+
+}

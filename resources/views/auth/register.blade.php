@@ -1,3 +1,4 @@
+@include('layouts.header')
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
@@ -50,11 +51,13 @@
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
-
-                <x-button class="ms-4">
-                    {{ __('Register') }}
-                </x-button>
+                <br>
+                <br>
             </div>
+            <x-button class="ms-4">
+                {{ __('Register') }}
+            </x-button>
         </form>
     </x-authentication-card>
 </x-guest-layout>
+@include('layouts.footer')
